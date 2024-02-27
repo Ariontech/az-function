@@ -28,6 +28,9 @@ jobs:
       - name: Terraform Initialize
         working-directory: terraform 
         run: terraform init
+      
+      - name: connect 
+        run: az login --user m.mouelhi@arion-tech.com --password Stoufa123@@
 
       - name: Terraform Plan
         working-directory: terraform 
