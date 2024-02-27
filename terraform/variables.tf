@@ -28,3 +28,18 @@ variable "azurerm_container_app_name" {
   default     = "airflow-app"
 }
 
+# variable "subscription_id" {
+#   description = "Azure subscription ID"
+# }
+
+# variable "client_id" {
+#   description = "Azure client ID"
+# }
+
+# variable "client_secret" {
+#   description = "Azure client secret"
+# }
+
+# variable "tenant_id" {
+#   description = "Azure tenant ID"
+# }
