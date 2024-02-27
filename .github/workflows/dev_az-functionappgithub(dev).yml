@@ -26,18 +26,12 @@ jobs:
 
       # Add steps to initialize, plan, and apply Terraform
       - name: Terraform Initialize
-        working-directory: terraform 
         run: terraform init
-      
-      - name: connect 
-        run: az login
 
       - name: Terraform Plan
-        working-directory: terraform 
         run: terraform plan -out=tfplan
 
       - name: Terraform Apply
-        working-directory: terraform 
         run: terraform apply -auto-approve tfplan
 
   build-and-deploy:
